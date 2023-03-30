@@ -4,7 +4,21 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            int number;
+            int factorial = 1;
+
+            Console.Write(" Enter number: ");
+            int.TryParse(Console.ReadLine(), out number);
+
+            for (int i = 1; i <= number; i++)
+            {
+                factorial = factorial * i;
+            }
+
+            Console.WriteLine($" Factorial of {number} is: {factorial} ");
+            Console.WriteLine();
+
+            Main(args);
         }
     }
 }
