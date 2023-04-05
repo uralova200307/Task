@@ -6,7 +6,27 @@ namespace Task
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(" Hello, worlid!");
+            Random random = new Random();   
+
+            Console.Write("Enter number: ");
+            int row = int.Parse(Console.ReadLine());
+            int[] array = new int[row];
+
+            for (int i = 0; i < array.Length; i++)
+            {
+                array[i] = random.Next(1, 10);
+                Console.WriteLine(array[i]);
+            }
+            if (array[0] == 6 || array[row - 1] == 6)
+            {
+                Console.WriteLine("true");
+            }
+            else
+            {
+                Console.WriteLine("false");
+            }
+
+            Main(args);
         }
     }
 }
