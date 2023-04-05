@@ -7,16 +7,6 @@ namespace Task
         static void Main(string[] args)
         {
           Random random = new Random();
-            //int[] array = new int[5];
-            //int[][] jaggedArray = new int[5][];
-
-            //int[] first = jaggedArray[5];
-
-            //for (int i = 0; i < array.Length; i++)
-            //{
-            //    Console.WriteLine(array[i]);
-
-            //}
             CreateArray();
            
         }
